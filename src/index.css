@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Upright';
+  src: local('Upright'),
+  url('./assets/fonts/Upright.ttf') format('truetype')
+}
+
+.shadowed{
+  text-shadow: 
+    3px 3px 0 black, 
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px black;  
+}
+
