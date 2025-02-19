@@ -16,11 +16,23 @@
     -3px 3px black;  
 }
 
-.shadowed-buttons{
+.shadowed-preview{
   text-shadow: 
     1px 1px 0 black, 
     -1px -1px 0 black,
     1px -1px 0 black,
     -1px 1px black;  
+}
+
+.shadowed-buttons{
+  text-shadow: 
+    1.5px 1.5px 0 black, 
+    -1.5px -1.5px 0 black,
+    1.5px -1.5px 0 black,
+    -1.5px 1.5px black;  
+}
+
+body {
+  background-color: #394853;
 }
 

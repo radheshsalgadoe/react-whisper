@@ -4,15 +4,14 @@ import React from "react"
 const Preview = React.forwardRef(({ inputText, uploadedImage }, ref) => {
   
   return (
-    <section ref ={ref} className="pb-20">
-        <div 
+    <section  className="my-20">
+        <div ref ={ref} 
         className="
         flex 
         items-center 
         justify-center 
         bg-gray-100 
-        w-[650px] 
-        h-[650px]
+        size-72
         justify-self-center 
         overflow-hidden"
         style={{
@@ -24,8 +23,8 @@ const Preview = React.forwardRef(({ inputText, uploadedImage }, ref) => {
           <h1 
           className="
           font-upright 
-          shadowed-greeting 
-          text-7xl 
+          shadowed-preview
+          text-4xl 
           text-center 
           text-white 
           text-wrap 
