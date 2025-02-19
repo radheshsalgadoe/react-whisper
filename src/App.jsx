@@ -1,12 +1,11 @@
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
-import Form from "./components/Form"
-import Greeting from "./components/Greeting"
-import Preview from "./components/Preview"
+import Form from "./components/Form";
+import Greeting from "./components/Greeting";
+import Preview from "./components/Preview";
 
 const App = () => {
-  
-  const [inputText, setInputText] = useState(""); // State for shared input text
+  const [inputText, setInputText] = useState(""); 
   const [uploadedImage, setUploadedImage] = useState(null);
   const previewRef = useRef();
 
@@ -23,21 +22,32 @@ const App = () => {
   };
 
   return (
-    <>
-      <Greeting/>
+    <div 
+      style={{ 
+        display: "flex", 
+        flexDirection: "column",
+        justifyContent: "center", 
+        alignItems: "center", 
+        minHeight: "100vh", 
+        width: "100%", 
+        textAlign: "center",
+        padding: "10px"
+      }}
+    >
+      <Greeting />
       <Form 
-        inputText = { inputText } 
-        setInputText = { setInputText }
+        inputText={inputText} 
+        setInputText={setInputText}
         setUploadedImage={setUploadedImage}
-        downloadPreview={downloadPreview} // Pass the function
+        downloadPreview={downloadPreview} 
       />
       <Preview 
-        inputText = { inputText }
+        inputText={inputText}
         uploadedImage={uploadedImage}
-        ref={previewRef} // Pass the ref to target Preview
+        ref={previewRef} 
       />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
